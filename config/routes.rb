@@ -1,6 +1,22 @@
-Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+# frozen_string_literal: true
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :users
+  devise_for :doctors
+
+  root 'home#welcome'
+
+  namespace :users do
+    resources :doctors, only: %i[index]
+    resources :appointments, only: %i[index show new create]
+  end
+
+  namespace :doctors do
+    resources :users, only: %i[index]
+    resources :appointments, only: %i[index show] do
+      resources :recommendations, only: %i[new create]
+    end
+  end
 end
