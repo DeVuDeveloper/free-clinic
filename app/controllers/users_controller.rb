@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  include Devisable
+
 
   before_action :authenticate_user!
 

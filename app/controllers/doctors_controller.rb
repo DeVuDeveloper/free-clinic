@@ -1,10 +1,7 @@
 # frozen_string_literal: true
 
 class DoctorsController < ApplicationController
-  include Devisable
-
   before_action :authenticate_doctor!
-
   rescue_from CanCan::AccessDenied, with: :access_denied
 
   private
