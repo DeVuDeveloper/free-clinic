@@ -74,7 +74,7 @@ git clone https://github.com/DeVuDeveloper/free-clinic.git
 ### Move into the cloned directory with
 
 ```bash
-cd bank-app-rails
+cd free-clinic
 ```
 
 ## Setup
