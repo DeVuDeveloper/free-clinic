@@ -3,7 +3,7 @@
 module Users
   class DoctorsController < UsersController
     def index
-      doctors = Doctor::CategoryFilter.new(params: permitted_params).call
+      doctors = CategoryFilter.new(params: permitted_params).call
       @presenter = DoctorsPresenter.new(doctors, permitted_params)
     end
 

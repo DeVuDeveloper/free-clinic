@@ -2,7 +2,7 @@
 
 class AppointmentsPresenter < ApplicationPresenter
   CHOSEN_TAB = 'chosen-category'
-  CLOSED_CLASS = 'bg-success'
+  CLOSED_CLASS = 'bg-danger'
   OPEN_CLASS = 'bg-success'
   CLOSED = 'appointment.closed'
   OPEN = 'appointment.open'

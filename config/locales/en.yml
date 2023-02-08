@@ -1,33 +1,64 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  doctor:
+    label: Doctor
+    label_of_many: Doctors
+    category: Category
+    avatar: Photo
+  user:
+    label: User
+    patient: Patient
+  appointment:
+    label: Appointment
+    label_of_many: Appointments
+    open: Open
+    closed: Closed
+    date: Date
+    time: Time
+    datetime: Date and time
+    status: Status
+    actions: Actions
+    make: Make an appointment
+  with_doubledots:
+    doctor: 'Doctor:'
+    category: "Doctor's category:"
+    user: 'User:'
+    datetime: 'Date and time:'
+    status: 'Status:'
+    recommendation: 'Recommendation:'
+  recommendation:
+    label: Recommendation
+    write: Write a recommendation
+  working_hours:
+    start: '8:00'
+    end: '19:50'
+  datetime:
+    hours_format: '%H:%M'
+    date_format: '%d.%m.%y'
+    full_format: '%d.%m.%y at %r'
+  codicamed: Free Clinic
+  profile: My Profile
+  all: All
+  full_name: Full Name
+  create: Create
+  update: Update
+  show: Show
+  write: Write
+  sign_up: Sign Up
+  sign_in: Sign In
+  have_account: Already have an account? Sign In
+  not_have_account: Don't have an account? Sign Up
+  choose_character: Welcome
+  exit: Logout
+  delete_account: Delete my account
+  hints:
+    leave_blank: leave blank if you don't want to change it
+    min_characters: (%{min_length} characters minimum)
+  errors:
+    appointment:
+      max_count: already has max count of appointments
+      not_in_future: must be in future
+      weekends: is in non working days
+      not_working_hours: is in non working hours
+    doctor:
+      avatar: is too large (max is 5 MB)
+    access_denied: You are not authorized to access this page.

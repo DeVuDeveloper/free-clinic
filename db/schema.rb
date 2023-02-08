@@ -59,11 +59,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_07_101547) do
 
   create_table "doctors", force: :cascade do |t|
     t.string "phone", null: false
+    t.string "full_name"
     t.string "encrypted_password", default: "", null: false
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "full_name"
     t.bigint "category_id", null: false
     t.jsonb "avatar_data"
     t.index ["category_id"], name: "index_doctors_on_category_id"
@@ -80,6 +80,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_07_101547) do
 
   create_table "users", force: :cascade do |t|
     t.string "phone", null: false
+    t.string "full_name"
     t.string "encrypted_password", default: "", null: false
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
