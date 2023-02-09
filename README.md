@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/DeVuDeveloper/free-clinic">
-    <img src="./app/assets/images/bank.png" alt="Logo" width="200" height="150">
+    <img src="./app/assets/images/logo.png" alt="Logo" width="200" height="150">
   </a>
 
   <h1 align="center">Clinic</h1>
