@@ -1,6 +1,5 @@
 # Clinic
 
-<!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/DeVuDeveloper/free-clinic">
     <img src="./app/assets/images/logo.png" alt="Logo" width="200" height="150">
