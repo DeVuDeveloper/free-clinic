@@ -1,4 +1,4 @@
-# Clinic ~
+# Clinic
 
 <!-- PROJECT LOGO -->
 <div align="center">
