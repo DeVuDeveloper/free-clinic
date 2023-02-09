@@ -31,7 +31,7 @@ A useful application built with ruby ​​on rails. The application is intended
 
 ## Live Demo
 
-([Live preview]())
+([Live preview](https://clinic-dejan.up.railway.app/))
 
 ## Getting Started 🏁
 
